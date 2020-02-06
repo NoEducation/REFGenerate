@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
+      "AdysTech.CredentialManager/1.9.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/AdysTech.CredentialManager.dll": {}
+        }
+      },
       "AvalonEdit/5.0.3": {
         "type": "package",
         "compile": {
@@ -666,6 +675,18 @@
     }
   },
   "libraries": {
+    "AdysTech.CredentialManager/1.9.1": {
+      "sha512": "Bioo3EhakdWm6wrNKQ9Gk1qVpKo8j0A8mkTFcv/QJeJJkdMH0/4O5FmQHB9/D28ifQYyf9Id/0kacYTq5nMf9w==",
+      "type": "package",
+      "path": "adystech.credentialmanager/1.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adystech.credentialmanager.1.9.1.nupkg.sha512",
+        "adystech.credentialmanager.nuspec",
+        "lib/net45/AdysTech.CredentialManager.dll"
+      ]
+    },
     "AvalonEdit/5.0.3": {
       "sha512": "L5CgXRniZRxI/tjoBztVgZnvTL1F/qKrRJa+Q88I0Gl78WRNaqdMkuOlkAsOHTauBGZSQNDO0/X+xIpzfzmLdQ==",
       "type": "package",
@@ -1296,6 +1317,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "AdysTech.CredentialManager >= 1.9.1 <= 1.9.1",
       "UiPath.Excel.Activities >= 2.7.2 <= 2.7.2",
       "UiPath.System.Activities >= 19.10.1 <= 19.10.1",
       "UiPath.UIAutomation.Activities >= 19.11.1 <= 19.11.1"
@@ -1315,6 +1337,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "AdysTech.CredentialManager": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.9.1, 1.9.1]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -1333,5 +1360,14 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AdysTech.CredentialManager 1.9.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "AdysTech.CredentialManager"
+    }
+  ]
 }

@@ -93,7 +93,7 @@
             </Assign>
             <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[IsSetCurrentPage]" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="af6354e35b4284550dedaf572f5cde53" Selector="[PageSelector]" TimeoutMS="2000">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="af6354e35b4284550dedaf572f5cde53" Selector="[PageSelector]" TimeoutMS="1000">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
@@ -114,10 +114,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b3228bead618cb61f5a2ad99826bd303" Selector="[PageSelectorForClick]">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b3228bead618cb61f5a2ad99826bd303" Selector="[PageSelectorForClick]" TimeoutMS="2500">
                       <ui:Target.WaitForReady>
                         <InArgument x:TypeArguments="ui:WaitForReady" />
                       </ui:Target.WaitForReady>
